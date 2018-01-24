@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>jquery.autosizes Demo</title>
+
+	<style>
+		img {
+			height: 50vh;
+			width: auto;
+		}
+	</style>
+
+</head>
+<body>
+
+	<img
+	alt=""
+	data-srcset="
+	//via.placeholder.com/200x200 200w,
+	//via.placeholder.com/400x400 400w,
+	//via.placeholder.com/600x600 600w,
+	//via.placeholder.com/800x800 800w,
+	//via.placeholder.com/800x800 1000w,
+	//via.placeholder.com/800x800 12000w,
+	//via.placeholder.com/1400x1400 1400w,
+	//via.placeholder.com/1600x1600 1600w,
+	//via.placeholder.com/1800x1800 1800w,
+	//via.placeholder.com/2000x2000 2000w"
+	data-src="//via.placeholder.com/100x100"
+	data-sizes="auto"
+	data-dimensions="500x500">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="jquery.autosizes.js"></script>
+	<script>
+		$(function() {
+		    $('img[data-sizes="auto"]').autoSizes();
+		});
+	</script>
+
+</body>
+</html>
