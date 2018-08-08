@@ -1,5 +1,7 @@
 (function($) {
 
+	/* Created by 22Slides.com */
+
     $.fn.autoSizes = function(parameters) {
 
         // Default Parameters
